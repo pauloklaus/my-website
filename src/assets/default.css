@@ -1,7 +1,47 @@
+:root {
+  --bg-color: #002;
+  --default-color: #666;
+  --light-color: #aaa;
+  --white-color: #fff;
+  --link-color: #77f;
+}
+
 * {
-    font-family: Arial;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  line-height: 160%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--default-color);
+}
+
+a:any-link {
+  color: var(--link-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-nowrap {
+  white-space: nowrap;
 }

@@ -58,6 +58,7 @@ export default {
   padding-left: 6px;
 }
 .linkbar-items a img {
-  height: 28px;
+  height: 20px;
+  margin-left: 4px;
 }
 </style>

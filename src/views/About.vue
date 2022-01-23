@@ -23,14 +23,28 @@
     </p>
 
     <p>
-      In the playground beside it is possible to test some simple components that I made
+      In the playground beside it's possible to test some simple components that I made
       available in the npm repository.
     </p>
 
     <p>
       Some skills:
-      <br>#javascript #vuejs #python #php
-      <br>#linux #docker #shellscript #bash
+      <ul>
+        <li><span class="text-white">#javascript</span> <span class="text-white">#vuejs</span> #jest #vuetest #axios #apirest #python #php</li>
+        <li>#html #css #bootstrap</li>
+        <li>#sql #nosql #mysql #postgresql</li>
+        <li><span class="text-white">#linux</span> #shellscript #bash #github #docker</li>
+        <li>#codereview #pairprogramming</li>
+      </ul>
     </p>
   </div>
 </template>
+
+<style scoped>
+ul {
+  margin-left: 20px;
+}
+ul li {
+  padding-left: 5px;
+}
+</style>

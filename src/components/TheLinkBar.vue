@@ -14,42 +14,40 @@
 
 <script>
 export default {
-  setup() {
-    const links = [
-      {
-        title: "linkedin",
-        image: "linkedin",
-        url: `https://linkedin.com/in/${process.env.VUE_APP_LINKEDIN}`,
-      },
-      {
-        title: "github",
-        image: "github",
-        url: `https://github.com/${process.env.VUE_APP_GITHUB}`,
-      },
-      {
-        title: "twitter",
-        image: "twitter",
-        url: `https://twitter.com/${process.env.VUE_APP_TWITTER}`,
-      },
-      {
-        title: "npmjs",
-        image: "npmjs",
-        url: `https://npmjs.com/~${process.env.VUE_APP_NPMJS}`,
-      },
-      {
-        title: "docker hub",
-        image: "docker",
-        url: `https://hub.docker.com/u/${process.env.VUE_APP_DOCKERHUB}`,
-      },
-      {
-        title: "mail",
-        image: "mail",
-        url: `mailto:${process.env.VUE_APP_EMAIL}`,
-      },
-    ];
-
+  data() {
     return {
-      links,
+      links: [
+        {
+          title: "linkedin",
+          image: "linkedin",
+          url: `https://linkedin.com/in/${process.env.VUE_APP_LINKEDIN}`,
+        },
+        {
+          title: "github",
+          image: "github",
+          url: `https://github.com/${process.env.VUE_APP_GITHUB}`,
+        },
+        {
+          title: "twitter",
+          image: "twitter",
+          url: `https://twitter.com/${process.env.VUE_APP_TWITTER}`,
+        },
+        {
+          title: "npmjs",
+          image: "npmjs",
+          url: `https://npmjs.com/~${process.env.VUE_APP_NPMJS}`,
+        },
+        {
+          title: "docker hub",
+          image: "docker",
+          url: `https://hub.docker.com/u/${process.env.VUE_APP_DOCKERHUB}`,
+        },
+        {
+          title: "mail",
+          image: "mail",
+          url: `mailto:${process.env.VUE_APP_EMAIL}`,
+        },
+      ],
     };
   },
 };

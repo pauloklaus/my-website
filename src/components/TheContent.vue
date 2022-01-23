@@ -14,12 +14,13 @@ export default {
   components: {
     TheHeaderBar,
   },
-  setup() {},
 };
 </script>
 
 <style scoped>
 main {
-  padding: 20px;
+  height: calc(100vh - var(--navbar-height));
+  padding: 10px 20px 0 20px;
+  overflow-y: auto;
 }
 </style>

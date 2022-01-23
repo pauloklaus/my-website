@@ -2,11 +2,9 @@
   <header>
     <div class="headerbar-gradient" />
     <div class="headerbar-main flex">
-      <div
-        class="headerbar-title flex-grow-1 text-light text-truncate text-nowrap"
-      >
+      <h1 class="headerbar-title flex-grow-1 text-light text-truncate text-nowrap">
         {{ appName }}
-      </div>
+      </h1>
       <the-link-bar />
     </div>
     <the-nav-bar />
@@ -22,12 +20,10 @@ export default {
     TheLinkBar,
     TheNavBar,
   },
-  setup() {
-    const appName = process.env.VUE_APP_NAME;
-
+  data() {
     return {
-      appName,
-    };
+      appName: process.env.VUE_APP_NAME,
+    }
   },
 };
 </script>

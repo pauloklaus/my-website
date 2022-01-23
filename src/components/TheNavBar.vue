@@ -1,35 +1,34 @@
 <template>
-  <div class="navbar-tabs text-nowrap">
-    <router-link v-for="tab in tabs" :key="tab" :to="{ name: tab }">{{ tab }}</router-link>
-  </div>
+  <nav class="text-nowrap">
+    <router-link v-for="tab in tabs" :key="tab" :to="{ name: tab }">/{{ tab }}</router-link>
+  </nav>
 </template>
 
 <script>
 export default {
-  setup() {
-    const tabs = ["webshell", "playground"];
-
+  data() {
     return {
-      tabs,
-    };
+      tabs: ["webshell", "playground"],
+    }
   },
 };
 </script>
 
 <style scoped>
-.navbar-tabs {
+nav {
   overflow-x: auto;
   border-bottom: 3px solid var(--white-color);
   padding: 0 20px;
+  margin-bottom: 5px;
 }
-.navbar-tabs a {
+nav a {
   text-decoration: none;
   background-color: var(--light-color);
   color: var(--bg-color);
   margin-right: 10px;
-  padding: 10px;
+  padding: 15px;
 }
-.navbar-tabs .router-link-exact-active {
+nav .router-link-exact-active {
   background-color: var(--white-color);
 }
 </style>

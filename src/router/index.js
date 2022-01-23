@@ -36,7 +36,7 @@ const router = new VueRouter({
 });
 
 router.afterEach((to) => {
-  to.meta.path = to.path.endsWith("/") ? to.path.substr(0, to.path.length - 1) : to.path;
+  to.meta.path = to.path.endsWith("/") ? to.path.substring(0, to.path.length - 1) : to.path;
 
   Vue.nextTick(() => {
     document.title = process.env.VUE_APP_NAME;

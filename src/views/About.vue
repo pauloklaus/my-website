@@ -15,7 +15,7 @@
 
     <p>
       I feel like a <span class="text-white">Linux enthusiast</span>.
-      I've been following the evolution for many years and using it as my operating system.
+      I've been following the evolution for many years and using it as my <span class="text-white">main</span> operating system.
     </p>
 
     <p>

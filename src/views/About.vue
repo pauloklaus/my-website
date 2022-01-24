@@ -34,7 +34,7 @@
         <li>#html #css #bootstrap</li>
         <li>#sql #nosql #mysql #postgresql</li>
         <li><span class="text-white">#linux</span> #shellscript #bash #github #docker</li>
-        <li>#codereview #pairprogramming</li>
+        <li>#cleancode #cleanarchitecture #codereview #pairprogramming</li>
       </ul>
     </p>
   </div>

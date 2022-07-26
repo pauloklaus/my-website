@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      tabs: ["about", "playground", "webshell"],
+      tabs: ["playground", "webshell"],
     }
   },
 };

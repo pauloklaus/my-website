@@ -1,21 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import About from "@/views/About";
 import Playground from "@/views/Playground";
 import WebShell from "@/views/WebShell";
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: "/about",
-    name: "about",
-    component: About,
-    meta: {
-      title: "about"
-    }
-  },
   {
     path: "/webshell",
     name: "webshell",
@@ -34,7 +25,7 @@ const routes = [
   },
   {
     path: "*",
-    redirect: { name: "about" }
+    redirect: { name: "playground" }
   }
 ];
 
